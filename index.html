@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alsamara Typing Speed Game</title>
+    <link rel="stylesheet" href="fonts/static/Montserrat-Regular.ttf" />
+    <link rel="stylesheet" href="fonts/static/Montserrat-Bold.ttf" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="game">
+      <div class="name">Typing Speed Test Game</div>
+      <div class="container">
+        <div class="message">
+          Your Are Playing On
+          <span class="level_name"></span> Level & You Have
+          <span class="seconds"></span> Seconds To Type The Word
+        </div>
+        <!-- Chose Level Game  -->
+        <select name="chose-level" class="chose-level">
+          <option value="0" hidden>Choose Level</option>
+          <option value="Easy">Easy</option>
+          <option value="Normal">Normal</option>
+          <option value="Hard">Hard</option>
+        </select>
+        <!-- Start Playing  -->
+        <button class="start">Start Playing</button>
+        <div class="the-word"></div>
+        <input type="text" class="input" />
+        <div class="upcoming-words">Words Will Show Here</div>
+        <div class="control">
+          <div class="time">Time Left : <span></span> Seconds</div>
+          <div class="score">
+            Score : <span class="got"> 0 </span> From
+            <span class="total"></span>
+          </div>
+        </div>
+        <div class="finish"></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
